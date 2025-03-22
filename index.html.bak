@@ -42,7 +42,11 @@
     </div>
     <div id="wai" class="whoami">
         <h1>Who am I?</h1>
-        <p>A highly motivated student currently pursuing A Levels in Maths and Computer Science and a Level 3 BTEC in IT. Partnered with numerous different clients from different jobs to provide them with best work that can be produced for them. An energetic, enthusiastic, and ambitious person who has developed a responsible approach to any task undertaken, or situation presented with. Strong Communication and Problem-Solving skills through different experiences throughout past jobs.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
 
     </div>
     <div id="portfolio" class="portfolio-container">
