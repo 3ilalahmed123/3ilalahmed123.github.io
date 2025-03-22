@@ -1,7 +1,15 @@
+:root {
+    --background: #010102;
+    --text-color: #fff;
+
+
+}
+
+
 .loader_bg{
 	position: fixed;
 	z-index: 999999;	
-	background: #fff;		
+	background: var(--background);		
 	width: 100%;
 	height: 100%;	
 }
@@ -74,8 +82,9 @@ html {
     scroll-behavior: smooth;
   }
 body {
-
+    background-color: var(--background);
     margin: 0;
+    color:var(--text-color);
 }
 
 .portfolio-container {
@@ -84,7 +93,7 @@ body {
 }
 #navbar {
     overflow: hidden;
-    background-color: #ffff;
+    background-color: var(--background);
     /* border-bottom: 2pt solid #333; */
 }
 
@@ -165,7 +174,7 @@ body {
     height: 5vw;
     width: 5vw;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     border-width: 0px 1px 1px 0px;
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;
@@ -196,6 +205,7 @@ body {
     justify-content: right;
     padding-right: 1vh;
     font-size: 2vh;
+    color:var(--text-color);
 }
 
 a {
@@ -249,3 +259,37 @@ h2 {
     align-content: center;
     justify-content: center;
 }
+
+
+.inner-headings {
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 8vh;
+    overflow:hidden;
+}
+
+.inner-headings span {
+ position: relative;
+ animation: scroll-anim 10s ease infinite;
+} 
+
+/* Scrolls through 5 lines, each ~8vh apart */
+@keyframes scroll-anim {
+    /* Show the 1st line between 0% and 15% */
+    0%, 15%   { top: 0; }
+  
+    /* Transition to and hold 2nd line from 20% to 35% */
+    20%, 35%  { top: -8.5vh; }
+  
+    /* 3rd line from 40% to 55% */
+    40%, 55%  { top: -16.5vh; }
+  
+    /* 4th line from 60% to 75% */
+    60%, 75%  { top: -24.5vh; }
+  
+    /* 5th line from 80% to 95% */
+    80%, 95%  { top: -32.5vh; }
+  
+    /* Return to 1st line at 100% (loop) */
+    100%      { top: 0; }
+  }
